@@ -54,7 +54,9 @@ class QuestionModel(models.Model):
                                    verbose_name='следующий вопрос')
     answer = models.ForeignKey(
         'AnswerModel',
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
     )
     initial_question = models.BooleanField(
         'Инициализирующий(первый) вопрос',
