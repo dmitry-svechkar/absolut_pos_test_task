@@ -1,5 +1,4 @@
 from django.db import models
-# python manage.py loaddata survey.json
 
 
 class SurveyModel(models.Model):
