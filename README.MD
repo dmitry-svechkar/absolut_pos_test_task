@@ -27,9 +27,9 @@
 cd ap_test/
 python -m venv venv
 source venv/bin/activate
-pip instll -r requirements.txt
+pip install -r requirements.txt
 ```
-###### Заготовлен небольшой тестовый dump БД и запустить проект
+###### Загрузить небольшой тестовый dump БД и запустить проект
 ```
 python manage.py migrate
 python manage.py loaddata test_data.json
