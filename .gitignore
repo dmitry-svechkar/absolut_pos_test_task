@@ -1,1 +1,7 @@
 venv/
+ap_test/db.sqlite3
+ap_test/ap_test/__pycache__/wsgi.cpython-311.pyc
+ap_test/ap_test/__pycache__/__init__.cpython-311.pyc
+ap_test/ap_test/__pycache__/settings.cpython-311.pyc
+ap_test/ap_test/__pycache__/urls.cpython-311.pyc
+ap_test/survey.json
