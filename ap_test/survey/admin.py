@@ -26,7 +26,7 @@ class AnswerModelAdmin(admin.ModelAdmin):
     """
     Основная надстройка админ-панели по добавлению опросов
     Реализованы доп поля из связанных моделей
-    depends_on - следующий вопрос
+    depends_on - следующий вопрос без условия привязки к ответу.
     survey - опрос
     initial_question - Bool: инициализирующий(первый) вопрос
     + подключен Inline данных модели QuestionModel
@@ -49,7 +49,7 @@ class AnswerModelAdmin(admin.ModelAdmin):
 
     def depends_on(self, obj):
         return obj.question.depends_on
-    depends_on.short_description = 'следующий вопрос'
+    depends_on.short_description = 'следующий вопрос без привязки к ответу.'
 
     def survey(self, obj):
         return obj.question.survey
