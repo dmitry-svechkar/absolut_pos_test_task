@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Frame</title>
+<style>
+  .frame {
+    width: 50%;
+    margin: auto; 
+    border: 1px solid #000; 
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
+</head>
+<body>
+
+<div class="frame">
+  {% block content %}
+  <form action="{% url 'survey-view' question.id %}" method="post">
+    {% csrf_token %}
+    {{ question.question }}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Отправить</button>
+  </form>
+  {% endblock %}
+</div>
+
+</body>
+</html>
