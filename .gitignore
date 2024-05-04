@@ -25,3 +25,4 @@ ap_test/survey/migrations/__pycache__/0005_answermodel_next_question.cpython-311
 ap_test/survey/migrations/__pycache__/0006_datamodel.cpython-311.pyc
 ap_test/survey/migrations/__pycache__/0007_rename_serveymodel_surveymodel_and_more.cpython-311.pyc
 ap_test/survey/migrations/__pycache__/0008_remove_questionmodel_servey_questionmodel_survey.cpython-311.pyc
+ap_test/survey/migrations/__pycache__/0006_alter_answermodel_options_alter_datamodel_options_and_more.cpython-311.pyc
